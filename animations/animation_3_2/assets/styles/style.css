@@ -12,7 +12,6 @@ body {
   display: flex;
   column-gap: 20px;
   height: 70px;
-  background-color: peachpuff;
   position: absolute;
   top: 50%;
   left: 50%;
