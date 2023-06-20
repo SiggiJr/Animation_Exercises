@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.ball1 {
+  animation: frame1 4s ease-in-out infinite;
+}
+
+/* .ball2 {
+  animation: frame2 5s ease-in-out infinite;
+} */
+
+.ball2 {
+  animation: frame1 4s ease-in-out 1s infinite;
+}
+
+.ball3 {
+  animation: frame1 4s ease-in-out 2s infinite;
+}
+
+.ball4 {
+  animation: frame1 4s ease-in-out 3s infinite;
+}
+
+/* .ball3 {
+  animation: frame3 5s ease-in-out infinite;
+}
+
+.ball4 {
+  animation: frame4 5s ease-in-out infinite;
+} */
+
+@keyframes frame1 {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+
+  25% {
+    top: 0;
+    left: calc(100% - 50px);
+    background-color: yellow;
+  }
+
+  50% {
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+    background-color: greenyellow;
+  }
+
+  75% {
+    top: calc(100% - 50px);
+    left: 0;
+    background-color: blue;
+  }
+}
+/* 
+@keyframes frame2 {
+  75% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+
+  0%,
+  100% {
+    top: 0;
+    left: calc(100% - 50px);
+    background-color: yellow;
+  }
+
+  25% {
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+    background-color: greenyellow;
+  }
+
+  50% {
+    top: calc(100% - 50px);
+    left: 0;
+    background-color: blue;
+  }
+}
+
+@keyframes frame3 {
+  50% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+
+  75% {
+    top: 0;
+    left: calc(100% - 50px);
+    background-color: yellow;
+  }
+
+  0%,
+  100% {
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+    background-color: greenyellow;
+  }
+
+  25% {
+    top: calc(100% - 50px);
+    left: 0;
+    background-color: blue;
+  }
+}
+
+@keyframes frame4 {
+  25% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+
+  50% {
+    top: 0;
+    left: calc(100% - 50px);
+    background-color: yellow;
+  }
+
+  75% {
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+    background-color: greenyellow;
+  }
+
+  0%,
+  100% {
+    top: calc(100% - 50px);
+    left: 0;
+    background-color: blue;
+  }
+} */
